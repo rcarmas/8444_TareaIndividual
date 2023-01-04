@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ajax</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal - v4.9.1
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="../../index.html">Ajax</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>AJAX no es un <span> lenguaje  </span> de programación.</h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Inicio</a></li>
+          <li><a class="nav-link" href="#que">Qué es?</a></li>
+          <li><a class="nav-link" href="#ejem">Ejemplo</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bi bi-code-slash"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-cpu"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-journal-code"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-device-hdd-fill"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Que es? Section ======= -->
+  <section id="que" class="about">
+
+    <div class="container col-sm-12">
+
+      <div class="row justify-content-around">
+        <div class="section-title">
+          <h2>Qué es?</h2>
+          </div>
+          
+          <p style="text-align:justify;">
+          Ten en cuenta que AJAX no es una sola tecnología, ni es un lenguaje de programación. Como se dijo antes, AJAX es un conjunto de técnicas de desarrollo web. El sistema generalmente comprende:    
+          </p>
+          <ul>
+            <li>HTML/XHTML para el lenguaje principal y CSS para la presentación</li>
+            <li>El Modelo de objetos del documento (DOM) para datos de visualización dinámicos y su interacción.</li>
+            <li>XML para el intercambio de datos y XSLT para su manipulación. Muchos desarrolladores han comenzado a reemplazarlo por JSON porque es más similar a JavaScript en su forma.</li>
+            <li>El objeto XMLHttpRequest para la comunicación asíncrona.</li>
+            <li>Finalmente, el lenguaje de programación JavaScript para unir todas estas tecnologías.</li>
+          </ul>
+          </div>
+          <div class="container col-sm-12 row justify-content-around" data-aos="fade-left">
+        <div class="section-title">
+          <h2>Cómo funciona AJAX</h2>
+        </div>
+        <img src="assets/img/ajax.png" alt=""
+                          class="img-fluid">
+        <ol>
+          <li>Se produce un evento en una página web (se carga la página, se hace clic en un botón).</li>
+          <li>JavaScript crea un objeto XMLHttpRequest</li>
+          <li>El objeto XMLHttpRequest envía una solicitud a un servidor web</li>
+          <li>El servidor procesa la solicitud</li>
+          <li>El servidor envía una respuesta a la página web.</li>
+          <li>La respuesta es leída por JavaScript</li>
+          <li>JavaScript realiza la acción adecuada (como la actualización de la página)</li>
+        </ol>
+      </div> 
+      </div>
+
+    </div>
+  </section><!-- End Que es? Section -->
+
+  <!-- ======= Ejemplo Section ======= -->
+  <section id="ejem" class="resume">
+    <div class="container col-sm-12">
+
+      <div class="row justify-content-around">  
+        <div class="section-title">
+          <h2>Ajax Ejemplo</h2>
+        </div>
+        <h2>Ejemplo - GET Requests</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;h2>The XMLHttpRequest Object /h2> <br>
+                &#60;button type="button" onclick="loadDoc()">Request data /button><br>
+                &#60;p id="demo"> /p><br>
+                &#60;script>
+                function loadDoc() {<br>
+                    const xhttp = new XMLHttpRequest();<br>
+                    xhttp.onload = function() {<br>
+                      document.getElementById("demo").innerHTML = this.responseText;<br>
+                  }<br>
+                  xhttp.open("GET", "demo_get.asp");<br>
+                  xhttp.send();<br>
+                }<br>
+                &#60;/script>
+            </p>
+          </div>
+          &nbsp; &nbsp; &nbsp;
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>The XMLHttpRequest Object</h2>
+                <button type="button" onclick="loadDoc()">Request data</button>
+                <p id="demo"></p>
+
+                <script>
+                function loadDoc() {
+                  const xhttp = new XMLHttpRequest();
+                  xhttp.onload = function() {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                  }
+                  xhttp.open("GET", "demo_get.asp");
+                  xhttp.send();
+                }
+                </script>
+          </div>
+      </div>
+  </section><!-- End Ejemplo Section -->
+
+  <div class="credits">
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
+    Designed by <a href="https://bootstrapmade.com/">Grupo03</a>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

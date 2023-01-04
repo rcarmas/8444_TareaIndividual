@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>JSON</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Personal - v4.9.1
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="container">
+
+        <h1><a href="../../index.html">JSON</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+        <h2>JSON es un <span> formato de texto </span> para almacenar y transportar datos</h2>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link active" href="#header">Inicio</a></li>
+            <li><a class="nav-link" href="#que">Que és?</a></li>
+            <li><a class="nav-link" href="#ejem">Ejemplo</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+        <div class="social-links">
+          <a class="twitter"><i class="bi bi-code-slash"></i></a>
+          <a class="facebook"><i class="bi bi-cpu"></i></a>
+          <a class="instagram"><i class="bi bi-journal-code"></i></a>
+          <a class="linkedin"><i class="bi bi-device-hdd-fill"></i></a>
+        </div>
+
+      </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Que es? Section ======= -->
+    <section id="que" class="resume">
+
+      <!-- ======= About Me ======= -->
+      <div class="about-me container">
+
+        <div class="row justify-content-around">
+        <div class="section-title">
+          <h2>Qué es?</h2>
+          </div>
+          
+          <p style="text-align:justify;">
+           JSON es un formato de texto totalmente independiente del lenguaje de programación. “Define seis tipos de valores: nulo, números, cadenas, booleanos, matrices y objetos”. <br>
+
+            Sin embargo, no es necesariamente parte de JavaScript. De hecho, es un estándar basado en texto plano que sirve para intercambiar datos y se usa cuando se requiere que un sistema requiera mostrar o enviar información para que otros sistemas los lean e interpreten. <br>
+
+            En resumen, JSON no es un lenguaje de programación sino un archivo que contiene datos estructurados, que se utiliza para transferir información entre sistemas.
+          </p>
+          </div>
+          <div class="container col-sm-12 row justify-content-around" data-aos="fade-left">
+        <div class="section-title">
+          <h2>¿Por qué usar JSON?</h2>
+        </div>
+        <p>
+          El formato JSON es sintácticamente similar al código para crear objetos JavaScript. Debido a esto, un programa JavaScript puede convertir fácilmente datos JSON en objetos JavaScript. <br>
+
+          Dado que el formato es solo texto, los datos JSON se pueden enviar fácilmente entre computadoras y ser utilizados por cualquier lenguaje de programación. <br>
+
+          JavaScript tiene una función integrada para convertir cadenas JSON en objetos JavaScript:
+
+        </p>
+
+          <ul>
+            <li>
+              JSON.parse()
+            </li>
+          </ul>
+
+          <p>
+          JavaScript tiene una función integrada para convertir cadenas JSON en objetos JavaScript: 
+        </p>
+
+          <ul>
+            <li>
+              JSON.stringify()
+            </li>
+          </ul>
+
+        </p>
+      </div> 
+      </div>
+
+      </div><!-- End About Me -->
+
+    </section><!-- End Que es? Section -->
+
+    <!-- ======= Ejemplo Section ======= -->
+    <section id="ejem" class="resume">
+       <div class="container col-sm-12">
+
+      <div class="row justify-content-around">  
+        <div class="section-title">
+          <h2>JSON Ejemplo</h2>
+        </div>
+        <h2>Ejemplo - Parsing JSON</h2>
+        <div class="col-lg-5" style="border-style: solid;">
+            <br>
+            <p>
+                &#60;h2>Creación de un objeto a partir de una cadena JSON /h2> <br>
+                &#60;p id="demo">/p><br>
+                &#60;script><br>
+                const txt = '{"nombre":"John", "edad":30, "ciudad":"New York"}'<br>
+                const obj = JSON.parse(txt);<br>
+                document.getElementById("demo").innerHTML = "Nombre: "+ obj.nombre + ", " + "Edad: " + obj.edad;<br>
+                &#60;/script>
+            </p>
+          </div>
+          &nbsp; &nbsp; &nbsp;
+          <div class="col-lg-5 " style="border-style: solid;">
+                <h2>Creación de un objeto a partir de una cadena JSON</h2>
+                <p id="demo"></p>
+                <script>
+                const txt = '{"nombre":"John", "edad":30, "ciudad":"New York"}'
+                const obj = JSON.parse(txt);
+                document.getElementById("demo").innerHTML = "Nombre: "+ obj.nombre + ", " + "Edad: " + obj.edad;
+                </script> 
+          </div>
+      </div>
+
+
+    </section><!-- End Ejemplo Section -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+  </body>
+
+</html>
