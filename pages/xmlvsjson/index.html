@@ -95,7 +95,7 @@
             </tr>
             <tr>
               <td class="tg-0pky">El formato JSON es una forma de almacenar datos de forma compacta para que los programas puedan leerlos.</td>
-              <td class="tg-0pky">el formato de datos XML es una forma específica de lenguaje de marcas para almacenar datos de forma organizada.</td>
+              <td class="tg-0pky">El formato de datos XML es una forma específica de lenguaje de marcas para almacenar datos de forma organizada.</td>
             </tr>
             <tr>
               <td class="tg-0pky"> JSON se utiliza para almacenar y transmitir datos.</td>
@@ -133,52 +133,36 @@
 
       <div class="row justify-content-around">
          <div class="section-title">
-          <h2>Diferencias</h2>
+          <h2>Similitudes</h2>
           <table class="tg">
           <thead>
             <tr>
-              <th class="tg-0pky" style="text-align: center;"><h3>JSON</h3></th>
-              <th class="tg-0pky" style="text-align: center;"> <h3>XML</h3></th>
+              <th class="tg-0pky"><h3>Tanto JSON como XML son formatos autodescriptivos</h3></th>
+              <th class="tg-0pky">Los formatos autodescriptivos se diseñaron para que fueran legibles para el ser humano, legibles para el ser humano, legibles para la máquina y legibles para la máquina. Por ejemplo: <br>
+                <ul>
+                  <li>Legibles para el ser humano - Los mismos datos pueden presentarse de diversas maneras (por ejemplo, texto ASCII) para que los seres humanos puedan entenderlos fácilmente sin tener que aprender cómo funciona el ordenador o qué información específica se almacena dentro de un objeto;</li>
+                  <li>Escribible por humanos: los humanos pueden cambiar el contenido de los objetos existentes añadiendo o eliminando propiedades;</li>
+                  <li>Legible por la máquina - Las máquinas pueden entender estos archivos porque hay reglas sobre cómo deben formatearse los números (por ejemplo, el primer punto decimal está siempre en su línea).</li>
+                </ul>
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="tg-0pky">JSON es ligero y fácil de leer, pero no proporciona información sobre el esquema o el tipo. Es ideal para compartir datos entre varias aplicaciones.</td>
-              <td class="tg-0pky">XML es legible por los humanos pero no necesariamente por las máquinas. Puede utilizarse para compartir información estructurada entre programas y documentos.</td>
+              <td class="tg-0pky"><h3>Tanto JSON como XML tienen un buen soporte para las definiciones de contenido y la validación</h3></td>
+              <td class="tg-0pky">JSON y XML son ampliamente utilizados, por lo que son soportados por muchos lenguajes de programación. Por ejemplo, JSON es compatible con JavaScript, Python, Perl y Ruby. XML data también es compatible con muchos lenguajes de programación diferentes: JavaScript, PHP y C# (que es la versión de Microsoft de C++). Puedes utilizar una biblioteca serializadora XML para convertir tu documento JSON en un archivo XML, de la misma manera que podrías escribir una página HTML utilizando la etiqueta o crear imágenes.</td>
             </tr>
             <tr>
-              <td class="tg-0pky">JSON es una forma ligera y legible para el ser humano de representar estructuras de datos.</td>
-              <td class="tg-0pky">XML es una forma más larga de representar datos estructurados.</td>
+              <td class="tg-0pky"><h3>La serialización de datos</h3></td>
+              <td class="tg-0pky">JSON y XML pueden utilizarse para la serialización de datos (convertir una estructura de datos a un formato para su almacenamiento o transmisión). Esto significa que puedes utilizarlos para pasar información de una aplicación o sistema a otro a través de un canal de comunicación como HTTP o SOAP (protocolo simple de acceso a objetos).</td>
             </tr>
             <tr>
-              <td class="tg-0pky">JSON puede utilizarse con archivos JavaScript o de texto plano.</td>
-              <td class="tg-0pky">XML sólo puede almacenarse como archivo de texto.</td>
+              <td class="tg-0pky"><h3>Basado en texto</h3></td>
+              <td class="tg-0pky">Una de las similitudes más evidentes entre estas dos estructuras de datos es que JSON y XML están basadas en texto. Por ello, muchos creen que JSON se creó para ser una alternativa más sencilla a XML.</td>
             </tr>
             <tr>
-              <td class="tg-0pky">El formato JSON es una forma de almacenar datos de forma compacta para que los programas puedan leerlos.</td>
-              <td class="tg-0pky">el formato de datos XML es una forma específica de lenguaje de marcas para almacenar datos de forma organizada.</td>
-            </tr>
-            <tr>
-              <td class="tg-0pky"> JSON se utiliza para almacenar y transmitir datos.</td>
-              <td class="tg-0pky">XML se utiliza para representar datos de forma legible por la máquina.</td>
-            </tr>
-            <tr>
-              <td class="tg-0pky">Puedes utilizar JSON en tu aplicación web o móvil sin preocuparte de los problemas de compatibilidad porque está ampliamente aceptado en la web y en las aplicaciones móviles.</td>
-              <td class="tg-0pky">XML tiene algunos problemas de compatibilidad entre plataformas.</td>
-            </tr>
-            <tr>
-              <td class="tg-0pky">JSON suele ser más compacto que XML, lo que significa que puede transmitirse más rápidamente a través de las redes. JSON también tiene menos restricciones en su estructura, lo que ayuda a los programadores cuando intentan analizar grandes cantidades de datos a partir de él.</td>
-              <td class="tg-0pky">XML requieren más espacio de almacenamiento que los archivos JSON (al menos si se utilizan con Node.</td>
-            </tr>
-            <tr>
-              <td class="tg-0pky">La sintaxis de JSON permite definir objetos fácilmente, a diferencia de la forma más verbosa con arrays o colecciones en la sintaxis de XML. Por ejemplo: <br>
-              <h4 style="font-size: 20px;">```javascript function myFunction(date) { return { "date": date }; } var obj = Object.create(null); obj["date"] = new Date(); ```</h4>
-            </td>
-              <td class="tg-0pky">XML es más complicada que la de JSON debido a su necesidad de referencias a entidades que pueden no ser necesarias en algunos casos (por ejemplo, si estás creando un servicio de API). XML no es legible para los humanos. Es mucho más fácil leer JSON que XML porque JSON utiliza menos caracteres, lo que facilita la comprensión del significado de los datos. JSON es más conciso. Utiliza menos caracteres para representar la misma información que XML.</td>
-            </tr>
-            <tr>
-              <td class="tg-0pky">En JSON, sólo se admiten como tipos de datos la cadena, el número, el booleano y el nulo.</td>
-              <td class="tg-0pky">XML se pueden utilizar muchos otros tipos, como la fecha y la hora, para describir los datos de XML.</td>
+              <td class="tg-0pky"><h3>Estructuras jerárquicas</h3></td>
+              <td class="tg-0pky">En tercer lugar, ambos formatos tienen estructuras jerárquicas en las que cada campo tiene su nombre y valor separados por comas.</td>
             </tr>
           </tbody>
           </table>
