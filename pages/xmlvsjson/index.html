@@ -44,12 +44,13 @@
       <h1><a href="../../index.html">XMLvsJSON</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>Reaccionar a eventos <span>HTML </span> usando DOM</h2>
+      <h2>Tanto <span>JSON como XML </span> se pueden usar para recibir datos de un servidor web.</h2>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#reaccionar">Tabla de diferencias</a></li>
+          <li><a class="nav-link" href="#diferencias">Tabla de Diferencias</a></li>
+          <li><a class="nav-link" href="#similitudes">Tabla de Similitudes</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -65,83 +66,126 @@
   </header><!-- End Header -->
 
   <!-- ======= Diferencias Section ======= -->
-  <section id="reaccionar" class="about">
+  <section id="diferencias" class="about">
 
     <div class="container col-sm-12">
 
       <div class="row justify-content-around">
          <div class="section-title">
-          <h2>REACCIONAR</h2>
-          <h3>Un JavaScript se puede ejecutar cuando ocurre un evento, como cuando un usuario hace clic en un elemento HTML. Para ejecutar código cuando un usuario hace clic en un elemento, agregue código JavaScript a un atributo de evento HTML:</h3>
-          <br>
-          <div class="col-lg-12" style="border-style: solid;">
-            <h3>onclick=JavaScript</h3>
+          <h2>Diferencias</h2>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-0pky" style="text-align: center;"><h3>JSON</h3></th>
+              <th class="tg-0pky" style="text-align: center;"> <h3>XML</h3></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-0pky">JSON es ligero y fácil de leer, pero no proporciona información sobre el esquema o el tipo. Es ideal para compartir datos entre varias aplicaciones.</td>
+              <td class="tg-0pky">XML es legible por los humanos pero no necesariamente por las máquinas. Puede utilizarse para compartir información estructurada entre programas y documentos.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">JSON es una forma ligera y legible para el ser humano de representar estructuras de datos.</td>
+              <td class="tg-0pky">XML es una forma más larga de representar datos estructurados.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">JSON puede utilizarse con archivos JavaScript o de texto plano.</td>
+              <td class="tg-0pky">XML sólo puede almacenarse como archivo de texto.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">El formato JSON es una forma de almacenar datos de forma compacta para que los programas puedan leerlos.</td>
+              <td class="tg-0pky">el formato de datos XML es una forma específica de lenguaje de marcas para almacenar datos de forma organizada.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky"> JSON se utiliza para almacenar y transmitir datos.</td>
+              <td class="tg-0pky">XML se utiliza para representar datos de forma legible por la máquina.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">Puedes utilizar JSON en tu aplicación web o móvil sin preocuparte de los problemas de compatibilidad porque está ampliamente aceptado en la web y en las aplicaciones móviles.</td>
+              <td class="tg-0pky">XML tiene algunos problemas de compatibilidad entre plataformas.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">JSON suele ser más compacto que XML, lo que significa que puede transmitirse más rápidamente a través de las redes. JSON también tiene menos restricciones en su estructura, lo que ayuda a los programadores cuando intentan analizar grandes cantidades de datos a partir de él.</td>
+              <td class="tg-0pky">XML requieren más espacio de almacenamiento que los archivos JSON (al menos si se utilizan con Node.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">La sintaxis de JSON permite definir objetos fácilmente, a diferencia de la forma más verbosa con arrays o colecciones en la sintaxis de XML. Por ejemplo: <br>
+              <h4 style="font-size: 20px;">```javascript function myFunction(date) { return { "date": date }; } var obj = Object.create(null); obj["date"] = new Date(); ```</h4>
+            </td>
+              <td class="tg-0pky">XML es más complicada que la de JSON debido a su necesidad de referencias a entidades que pueden no ser necesarias en algunos casos (por ejemplo, si estás creando un servicio de API). XML no es legible para los humanos. Es mucho más fácil leer JSON que XML porque JSON utiliza menos caracteres, lo que facilita la comprensión del significado de los datos. JSON es más conciso. Utiliza menos caracteres para representar la misma información que XML.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">En JSON, sólo se admiten como tipos de datos la cadena, el número, el booleano y el nulo.</td>
+              <td class="tg-0pky">XML se pueden utilizar muchos otros tipos, como la fecha y la hora, para describir los datos de XML.</td>
+            </tr>
+          </tbody>
+          </table>
           </div>
-          <br>
-          <p>Ejemplos de eventos HTML:</p>
-            <ul>
-              <li>Cuando un usuario hace clic con el mouse</li>
-              <li>Cuando una página web ha cargado</li>
-              <li>Cuando se ha cargado una imagen</li>
-              <li>Cuando el mouse se mueve sobre un elemento</li>
-              <li>Cuando se cambia un campo de entrada</li>
-              <li>Cuando se envía un formulario HTML</li>
-              <li>Cuando un usuario pulsa una tecla</li>
-            </ul>
-            <p>En este ejemplo, el contenido del &#60;h1> elemento cambia cuando un usuario hace clic en él:</p>
-        </div>
-        <h2>Ejemplo 1</h2>
-        <div class="col-lg-5" style="border-style: solid;">
-            <br>
-            <p>
-                &#60;!DOCTYPE html> <br>
-                &#60;html> <br>
-                &#60;body> <br>
-                &#60;h2>Eventos HTML JavaScript/h2> <br>
-                &#60;h2 onclick="this.innerHTML='El texto Cambio por un evento'">Da clic en este Text/h2> <br>
-                &#60;/body> <br>
-                &#60;/html> <br>
-            </p>
-          </div>
-           &nbsp;  &nbsp;  &nbsp;  &nbsp;
-          <div class="col-lg-5 " style="border-style: solid;">
-                <h2>Eventos HTML JavaScript</h2>
-                <p>Da clic en el texto de abajo</p>
-                <h2 onclick="this.innerHTML='El texto cambio por un evento HTML!'">Da clic en este Texto!</h2>
-          </div> 
-          <br>
-          <h2>Ejemplo 2</h2>
-          <p>En este ejemplo, se llama a una función desde el controlador de eventos:</p>
-          <div class="col-lg-5" style="border-style: solid;">
-            <br>
-            <p>
-                &#60;body><br>
-                &#60;h2>JavaScript HTML Events/h2><br>
-                &#60;h2 onclick="changeText(this)">Da clic en el texto de abajo/h2><br>
-                &#60;script><br>
-                function changeText(id) {<br>
-                  id.innerHTML = "El texto cambio por un evento HTML";<br>
-                }<br>
-                &#60;/script><br>
-                &#60;/body><br>
-            </p>
-          </div>
-          &nbsp;  &nbsp;  &nbsp;  &nbsp;
-          <div class="col-lg-5 " style="border-style: solid;">
-                <h2>Eventos HTML JavaScript</h2>
-                <p>Da clic en el texto de abajo</p>
-                <h2 onclick="changeText(this)">Da clic en el texto de abajo </h2>
-                <script>
-                function changeText(id) {
-                  id.innerHTML = "El texto cambio por un evento HTML";
-                }
-                </script>
-          </div>
-      </div>   
-
     </div>
 
   </section><!-- End Diferencias Section -->
+
+   <!-- ======= Similitudes Section ======= -->
+  <section id="similitudes" class="about">
+
+    <div class="container col-sm-12">
+
+      <div class="row justify-content-around">
+         <div class="section-title">
+          <h2>Diferencias</h2>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-0pky" style="text-align: center;"><h3>JSON</h3></th>
+              <th class="tg-0pky" style="text-align: center;"> <h3>XML</h3></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-0pky">JSON es ligero y fácil de leer, pero no proporciona información sobre el esquema o el tipo. Es ideal para compartir datos entre varias aplicaciones.</td>
+              <td class="tg-0pky">XML es legible por los humanos pero no necesariamente por las máquinas. Puede utilizarse para compartir información estructurada entre programas y documentos.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">JSON es una forma ligera y legible para el ser humano de representar estructuras de datos.</td>
+              <td class="tg-0pky">XML es una forma más larga de representar datos estructurados.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">JSON puede utilizarse con archivos JavaScript o de texto plano.</td>
+              <td class="tg-0pky">XML sólo puede almacenarse como archivo de texto.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">El formato JSON es una forma de almacenar datos de forma compacta para que los programas puedan leerlos.</td>
+              <td class="tg-0pky">el formato de datos XML es una forma específica de lenguaje de marcas para almacenar datos de forma organizada.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky"> JSON se utiliza para almacenar y transmitir datos.</td>
+              <td class="tg-0pky">XML se utiliza para representar datos de forma legible por la máquina.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">Puedes utilizar JSON en tu aplicación web o móvil sin preocuparte de los problemas de compatibilidad porque está ampliamente aceptado en la web y en las aplicaciones móviles.</td>
+              <td class="tg-0pky">XML tiene algunos problemas de compatibilidad entre plataformas.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">JSON suele ser más compacto que XML, lo que significa que puede transmitirse más rápidamente a través de las redes. JSON también tiene menos restricciones en su estructura, lo que ayuda a los programadores cuando intentan analizar grandes cantidades de datos a partir de él.</td>
+              <td class="tg-0pky">XML requieren más espacio de almacenamiento que los archivos JSON (al menos si se utilizan con Node.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">La sintaxis de JSON permite definir objetos fácilmente, a diferencia de la forma más verbosa con arrays o colecciones en la sintaxis de XML. Por ejemplo: <br>
+              <h4 style="font-size: 20px;">```javascript function myFunction(date) { return { "date": date }; } var obj = Object.create(null); obj["date"] = new Date(); ```</h4>
+            </td>
+              <td class="tg-0pky">XML es más complicada que la de JSON debido a su necesidad de referencias a entidades que pueden no ser necesarias en algunos casos (por ejemplo, si estás creando un servicio de API). XML no es legible para los humanos. Es mucho más fácil leer JSON que XML porque JSON utiliza menos caracteres, lo que facilita la comprensión del significado de los datos. JSON es más conciso. Utiliza menos caracteres para representar la misma información que XML.</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">En JSON, sólo se admiten como tipos de datos la cadena, el número, el booleano y el nulo.</td>
+              <td class="tg-0pky">XML se pueden utilizar muchos otros tipos, como la fecha y la hora, para describir los datos de XML.</td>
+            </tr>
+          </tbody>
+          </table>
+          </div>
+    </div>
+
+  </section><!-- End Similitudes Section -->
 
   <div class="credits">
     <!-- All the links in the footer should remain intact. -->
